@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">AppRestaurants</string>
+    <string name="ini_lbl_mensaje">Starting app...</string>
+    <string name="log_txt_correo">E-mail</string>
+    <string name="log_txt_clave">Password</string>
+    <string name="log_btn_ingresar">Login</string>
+    <string name="log_btn_salir">Exit</string>
+    <string name="log_lbl_registrarse">Sign up here</string>
+    <string name="log_txt_derechos">Rights Reserved 2022</string>
+    <string name="log_chk_recordar">Remember session</string>
+    <string name="bie_txt_bienvenida">Bienvenido {nombre}</string>
+    <string name="reg_txt_titulo">Sign up</string>
+    <string name="reg_lbl_sexo">Sexuality</string>
+    <string name="reg_btn_registrar">Create account</string>
+    <string name="reg_btn_regresar">Back</string>
+
+    <string name="frg_rec_nos_titulo">Our recommendation</string>
+    <string name="frg_res_titulo">{Titulo restaurante}</string>
+    <string name="frg_res_descripcion">Descripcion descripcion descripcion descripcion descripcion descripcion descripcion descripcion descripcion descripcion</string>
+    <string name="frg_res_btn_comentar">Comment</string>
+    <string name="frg_rec_uds_titulo">Your recommendation</string>
+    <string name="comentar_lbl_titulo">Rate this restaurant!</string>
+    <string name="comentar_btn_publicar">Send</string>
+    <string name="frag_reg_tuyo">Recommend us your favorite restaurant!</string>
+    <string name="frag_reg_tuyo_btn_registrar">Send</string>
+    <string name="frag_reg_tuyo_btn_regresar">Back</string>
+    <string name="config_text_frag_titulo">Settings</string>
+    <string name="frag_config_correo">email</string>
+    <string name="frag_config_telefono">phone</string>
+    <string name="frag_config_direccion">direction</string>
+    <string name="frag_config_clave_anterior">oldclave</string>
+    <string name="frag_config_clave">clave</string>
+    <string name="frag_btn_config_actualizar">Update</string>
+    <string name="frag_btn_config_cs">Log Out</string>
+    <string name="frg_res_btn_regresar">Back</string>
+    <string name="comentar_btn_regresar">Back</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

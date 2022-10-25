@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.RecNosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/frg_rec_nos_titulo"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#A11C00"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold|italic"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/frg_rec_nos_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"/>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentos.ComentarFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/frg_comentar_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/comentar_lbl_titulo"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#D4AC0D"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold|italic"/>
+
+        <EditText
+            android:id="@+id/frg_comentar_txt_puntaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:hint="Score"
+            android:textColor="#A93226"
+            android:maxLength="3"
+            android:textStyle="bold"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comment"
+            app:boxStrokeColor="#D4AC0D"
+            app:hintTextColor="#D4AC0D">
+            <EditText
+                android:id="@+id/frg_comentar_txt_comentario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:gravity="top"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:layout_margin="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/frg_comentar_enviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/comentar_btn_publicar"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:backgroundTint="#D4AC0D"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"/>
+
+            <Button
+                android:id="@+id/frg_comentar_regresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/comentar_btn_regresar"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:backgroundTint="#D4AC0D"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

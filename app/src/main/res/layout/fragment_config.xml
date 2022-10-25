@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentos.ConfigFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/config_text_frag_titulo"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:textColor="#184A6B"
+            android:layout_marginTop="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/frag_config_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:maxLength="50"
+                android:inputType="textEmailAddress"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/frag_config_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:maxLength="9"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/frag_config_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:maxLength="50"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginBottom="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/frag_config_clave_anterior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Old Password"
+                android:maxLength="50"
+                android:inputType="textPassword"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginBottom="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/frag_config_clave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:maxLength="50"
+                android:inputType="textPassword"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginBottom="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/frag_btn_config_actualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frag_btn_config_actualizar"
+                android:textAllCaps="false"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="#184A6B"/>
+            <Button
+                android:id="@+id/frag_btn_config_cs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frag_btn_config_cs"
+                android:textAllCaps="false"
+                android:backgroundTint="#184A6B"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

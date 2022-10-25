@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.RestaurantFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/frg_res_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginRight="10dp"
+                android:maxHeight="250dp"
+                android:maxWidth="250dp"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/frg_res_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frg_res_titulo"
+                android:gravity="center"
+                android:textSize="32sp"
+                android:textColor="#D35400"
+                android:textStyle="italic"/>
+
+
+            <TextView
+                android:id="@+id/frg_res_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frg_res_descripcion"
+                android:textSize="18sp"
+                android:justificationMode="inter_word"
+                android:layout_marginHorizontal="15dp"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/frg_res_recycler_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/frg_res_btn_comentar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/frg_res_btn_comentar"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="#D35400"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="20dp"/>
+
+                <Button
+                    android:id="@+id/frg_res_btn_regresar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/frg_res_btn_regresar"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="#D35400"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
